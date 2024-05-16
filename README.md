@@ -39,7 +39,7 @@ The app is deployed on Streamlit Cloud. You can access it [here](https://youtube
 
 ## Example
 
-![App Screenshot](/path/to/your/image.png)
+![App Screenshot](sample_image.png)
 
 
 ## Installation
