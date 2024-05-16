@@ -21,6 +21,7 @@ from transformers import pipeline
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
+nltk.download('vader_lexicon')
 
 
 st.set_page_config(
