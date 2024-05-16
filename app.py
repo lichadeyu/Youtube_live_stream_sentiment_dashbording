@@ -18,7 +18,9 @@ import pickle
 from wordcloud import WordCloud
 from nltk.corpus import stopwords
 from transformers import pipeline
-stopwords_list=stopwords.words('english')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 
 st.set_page_config(
@@ -35,9 +37,7 @@ classifier = pipeline("text-classification", model='bhadresh-savani/distilbert-b
 
 
 # Ensure you have downloaded the necessary NLTK data files
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+
 
 def preprocess_text(text):
 
