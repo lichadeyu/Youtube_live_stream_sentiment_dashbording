@@ -1,0 +1,10 @@
+google-api-python-client
+matplotlib
+nltk
+numpy
+pandas
+plotly
+seaborn
+streamlit
+transformers
+wordcloud
