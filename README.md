@@ -28,7 +28,7 @@ This web application provides sentiment analysis and emotion analysis on the liv
 
 ## Deployment
 
-The app is deployed on Streamlit Cloud. You can access it [here](<your_app_url>).
+The app is deployed on Streamlit Cloud. You can access it [here](https://youtubelivestreamsentimentdashbording.streamlit.app/).
 
 ## Usage
 
@@ -40,6 +40,7 @@ The app is deployed on Streamlit Cloud. You can access it [here](<your_app_url>)
 ## Example
 
 ![App Screenshot](/path/to/your/image.png)
+
 
 ## Installation
 
