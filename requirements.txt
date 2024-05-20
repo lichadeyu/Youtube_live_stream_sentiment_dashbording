@@ -1,12 +1,12 @@
-google-api-python-client==2.53.0
-matplotlib==3.5.1
-nltk==3.7
-numpy==1.23.5
-pandas==1.4.1
-plotly==5.8.0
-seaborn==0.11.2
-streamlit==1.9.0
+google-api-python-client
+matplotlib
+nltk
+numpy
+pandas
+plotly
+seaborn
+streamlit
 transformers
-wordcloud== 1.9.3
-tensorflow==2.15.0
-tokenizers
+wordcloud
+tensorflow
+tf-keras
