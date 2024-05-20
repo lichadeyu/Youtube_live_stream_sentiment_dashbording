@@ -6,7 +6,7 @@ pandas==1.4.1
 plotly==5.8.0
 seaborn==0.11.2
 streamlit==1.9.0
-transformers==4.18.0
-wordcloud==1.8.1
-tensorflow==2.14.1
-tokenizers
+transformers==4.40.0
+wordcloud== 1.9.3
+tensorflow==2.15.0
+tokenizers== 0.15.2
