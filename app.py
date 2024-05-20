@@ -302,7 +302,7 @@ def scrape_live_comments(video_url,placeholder, sentiment_chart,
             pre_sadness=sadness_value
             pre_surprise=surprise_value
             
-            time.sleep(10)
+            time.sleep(60)
             next_page_token = response.get('nextPageToken')
             if not next_page_token:
                 break
