@@ -76,7 +76,7 @@ def clean_text(text):
 def predict_emotion(input_text):
     cleaned_text = clean_text(input_text)
     
-    Make prediction
+    # Make prediction
     predicted_label = pipeline.predict([cleaned_text])
     label = emotional_categories[predicted_label[0]]
     
