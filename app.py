@@ -10,7 +10,6 @@ import plotly.express as px
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 import re
-nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
