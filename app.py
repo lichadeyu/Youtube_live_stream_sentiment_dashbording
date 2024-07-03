@@ -10,6 +10,7 @@ import plotly.express as px
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 import re
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
@@ -18,6 +19,7 @@ import pickle
 from wordcloud import WordCloud
 from nltk.corpus import stopwords
 from transformers import pipeline
+
 stopwords_list=stopwords.words('english')
 
 
