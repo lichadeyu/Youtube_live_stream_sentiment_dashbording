@@ -17,7 +17,7 @@ from nltk.stem import PorterStemmer
 import pickle
 from wordcloud import WordCloud
 from nltk.corpus import stopwords
-from transformers import pipeline
+# from transformers import pipeline
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -32,9 +32,9 @@ st.set_page_config(
 
 
 # Load the pipeline from the pickle file
-# pipeline = pickle.load(open("stacking_model.pkl", "rb"))
+pipeline = pickle.load(open("stacking_model.pkl", "rb"))
 
-classifier = pipeline("text-classification", model='bhadresh-savani/distilbert-base-uncased-emotion', return_all_scores=True)
+# classifier = pipeline("text-classification", model='bhadresh-savani/distilbert-base-uncased-emotion', return_all_scores=True)
 
 
 # Ensure you have downloaded the necessary NLTK data files
@@ -76,26 +76,25 @@ def clean_text(text):
 def predict_emotion(input_text):
     cleaned_text = clean_text(input_text)
     
-    # Make prediction
-    # predicted_label = pipeline.predict([cleaned_text])
-    # label = emotional_categories[predicted_label[0]]
+    Make prediction
+    predicted_label = pipeline.predict([cleaned_text])
+    label = emotional_categories[predicted_label[0]]
     
-    # # Get the probability of the predicted label
-    # probabilities = pipeline.predict_proba([cleaned_text])
-    # score= np.max(probabilities)
+    # Get the probability of the predicted label
+    probabilities = pipeline.predict_proba([cleaned_text])
+    score= np.max(probabilities)
 
-    predicted_emotion = classifier(input_text)
-    prediction_data = predicted_emotion[0]
+    # predicted_emotion = classifier(input_text)
+    # prediction_data = predicted_emotion[0]
     
     # Calculate maximum score and corresponding label
-    score = 0
-    label = 'x'
-
+    # score = 0
+    # label = 'x'
      
-    for x in prediction_data:
-        if x['score'] > score:
-            score = x['score']
-            label = x['label']
+    # for x in prediction_data:
+    #     if x['score'] > score:
+    #         score = x['score']
+    #         label = x['label']
 
     return label,score
 
