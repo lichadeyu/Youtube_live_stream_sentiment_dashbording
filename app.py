@@ -8,6 +8,11 @@ from urllib.parse import urlparse, parse_qs
 import time
 import plotly.express as px
 import nltk
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 from nltk.sentiment import SentimentIntensityAnalyzer
 import re
 from nltk.corpus import stopwords
@@ -36,9 +41,9 @@ classifier = pipeline("text-classification", model='bhadresh-savani/distilbert-b
 
 
 # Ensure you have downloaded the necessary NLTK data files
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
 
 def preprocess_text(text):
 
